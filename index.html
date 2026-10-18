@@ -294,6 +294,10 @@
       <h2 class="display h2">How booking works</h2>
       <ol class="steps">
         <li>
+          <h3 class="display">Fill in the client intake form</h3>
+          <p>In order to accept your booking, you will need to fill in the <a href="https://docs.google.com/forms/d/e/1FAIpQLScfdnOW4g5wVYdvZCGRudkVMH3DzD4jo0S2c8HNF9kQOKERuQ/viewform" target="_blank" rel="noopener">client consultation form</a>.</p>
+        </li>
+        <li>
           <h3 class="display">Pick a time</h3>
           <p>Choose a treatment and an open slot in the calendar below. It takes about a minute.</p>
         </li>
@@ -331,9 +335,9 @@
 
       <div class="book-frame">
         <div id="cal-booking"></div>
-        <noscript>Turn on JavaScript to see the calendar, or book at <a href="https://cal.com/restore-by-bella/massage">cal.com/restore-by-bella/massage</a>.</noscript>
+        <noscript>Turn on JavaScript to see the calendar, or book at <a href="https://cal.com/restorebybella/sports-massage">cal.com/restorebybella/sports-massage</a>.</noscript>
       </div>
-      <p class="book-note">Prefer WhatsApp? Message Bella on <a href="https://wa.me/27799099387">079 909 9387</a>. Calendar not loading? <a href="https://cal.com/restore-by-bella/massage" target="_blank" rel="noopener">Open the booking page in a new tab</a>.</p>
+      <p class="book-note">Prefer WhatsApp? Message Bella on <a href="https://wa.me/27799099387">079 909 9387</a>. Calendar not loading? <a href="https://cal.com/restorebybella/sports-massage" target="_blank" rel="noopener">Open the booking page in a new tab</a>.</p>
     </div>
   </section>
 
@@ -344,15 +348,15 @@
       <div class="faq">
         <details>
           <summary>What should I wear?</summary>
-          <p>Shorts or a sports bra for lower-body and back work, or whatever you are comfortable in. Towels and draping are provided.</p>
+          <p>Loose and comfortable clothing is preferable. Towels and draping are provided.</p>
         </details>
         <details>
           <summary>How do I cancel or reschedule?</summary>
-          <p>Use the link in your confirmation email. Please give at least [24 hours] notice so the slot can go to someone else.</p>
+          <p>Use the link in your confirmation email. Please give at least 24 hours notice so the slot can go to someone else.</p>
         </details>
         <details>
           <summary>How does payment work?</summary>
-          <p>Pay by card at your session. Regular clients settle every second visit.</p>
+          <p>Pay by card or cash at your session.</p>
         </details>
         <details>
           <summary>Is my booking confirmed straight away?</summary>
@@ -379,20 +383,20 @@
   </div>
 </footer>
 
-<!-- Cal.com embed for restore-by-bella/massage (booker picks 30, 45 or 60 minutes). -->
+<!-- Cal.com embed for restorebybella/sports-massage (booker picks 30, 45 or 60 minutes). -->
 <script type="text/javascript">
   (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-  Cal("init", "massage", {origin:"https://app.cal.com"});
+  Cal("init", "sports-massage", {origin:"https://app.cal.com"});
   Cal.config = Cal.config || {};
   Cal.config.forwardQueryParams = true;
 
-  Cal.ns.massage("inline", {
+  Cal.ns["sports-massage"]("inline", {
     elementOrSelector: "#cal-booking",
     config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true","theme":"light"},
-    calLink: "restore-by-bella/massage",
+    calLink: "restorebybella/sports-massage",
   });
 
-  Cal.ns.massage("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#7B5844"},"dark":{"cal-brand":"#D9C79A"}},"hideEventTypeDetails":false,"layout":"month_view"});
+  Cal.ns["sports-massage"]("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#7B5844"},"dark":{"cal-brand":"#D9C79A"}},"hideEventTypeDetails":false,"layout":"month_view"});
 </script>
 </body>
 </html>
